@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <style>
+        /* Estilos CSS para la tabla */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Estilos CSS para el formulario */
+        form {
+            width: 60%;
+            margin: 20px auto;
+        }
+        label, select, input[type="text"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+     
+    <center>
+    <h1>Tabla Avanzada y Formulario</h1>
+    </center>
+    <!-- Tabla avanzada -->
+    <table>
+        <caption>Ejemplo de una Tabla Avanzada</caption>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>25</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td>30</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>22</td>
+                <td>Valencia</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Formulario -->
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad" required>
+            <option value="">Selecciona una ciudad</option>
+            <option value="madrid">Madrid</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="valencia">Valencia</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="bilbao">Bilbao</option>
+        </select>
+
+        <label>Preguntas adicionales:</label>
+        <fieldset>
+            <legend>Seleccione sus intereses:</legend>
+            <input type="checkbox" id="interes1" name="interes[]" value="deportes">
+            <label for="interes1">Deportes</label><br>
+            
+            <input type="checkbox" id="interes2" name="interes[]" value="lectura">
+            <label for="interes2">Lectura</label><br>
+            
+            <input type="checkbox" id="interes3" name="interes[]" value="viajes">
+            <label for="interes3">Viajes</label><br>
+            
+            <input type="checkbox" id="interes4" name="interes[]" value="tecnología">
+            <label for="interes4">Tecnología</label><br>
+            
+            <input type="checkbox" id="interes5" name="interes[]" value="arte">
+            <label for="interes5">Arte</label><br>
+
+            <input type="checkbox" id="interes6" name="interes[]" value="Atletismo">
+            <label for="interes6">Atletismo</label><br>
+
+            <input type="checkbox" id="interes7" name="interes[]" value="Computacion">
+            <label for="interes7">Arte</label><br>
+
+            <input type="checkbox" id="interes8" name="interes[]" value="Programacion">
+            <label for="interes8">Programacion</label><br>
+
+            <input type="checkbox" id="interes9" name="interes[]" value="Artesania">
+            <label for="interes9">Artesania</label><br>
+
+            <input type="checkbox" id="interes10" name="interes[]" value="Arquitectura">
+            <label for="interes10">Arquitectura</label><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
